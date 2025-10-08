@@ -1,0 +1,113 @@
+body {
+  background: linear-gradient(to bottom right, #a0e9ff, #fbc2eb);
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  color: #333;
+  width: 90%;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2em;
+  color: #ff007f;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #0078d4;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-top: 20px;
+  animation: pop 0.8s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.grade-buttons button {
+  background: linear-gradient(to right, #ffb6c1, #ff69b4);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.grade-buttons button:hover {
+  background: linear-gradient(to right, #ffa07a, #ff1493);
+  transform: scale(1.1);
+}
+
+#math-box input {
+  border: 2px solid #ffa1c5;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 1.1em;
+  margin: 10px;
+  width: 80%;
+  box-shadow: inset 0 0 5px rgba(255, 105, 180, 0.3);
+  text-align: center;
+}
+
+#math-box button {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#math-box button:hover {
+  transform: scale(1.1);
+}
+
+.feedback {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.score, .timer {
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.score {
+  background: #ff66b2;
+}
+
+.timer {
+  background: #9b59b6;
+}

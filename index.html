@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Math Game for Kids</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">🎯 Let's Play and Learn Math!</h1>
+
+    <!-- Grade Selection -->
+    <div id="grade-selection" class="card">
+      <h2 class="subtitle">🧩 Which Grade Are You In?</h2>
+      <div class="grade-buttons">
+        <button onclick="setGrade(1)">Grade 1️⃣</button>
+        <button onclick="setGrade(2)">Grade 2️⃣</button>
+        <button onclick="setGrade(3)">Grade 3️⃣</button>
+        <button onclick="setGrade(4)">Grade 4️⃣</button>
+        <button onclick="setGrade(5)">Grade 5️⃣</button>
+      </div>
+    </div>
+
+    <!-- Math Game Box -->
+    <div id="math-box" class="card" style="display:none;">
+      <h2 id="question" class="question"></h2>
+      <input type="number" id="answer" placeholder="Type your answer" />
+      <button id="checkBtn" onclick="checkAnswer()">Am I Right? ✅</button>
+      <p id="feedback" class="feedback"></p>
+      <button id="nextBtn" onclick="nextQuestion()">Next Challenge ➡️</button>
+    </div>
+
+    <!-- Score and Timer -->
+    <div id="score" class="score" style="display:none;">Score: 0</div>
+    <div id="timer" class="timer" style="display:none;">Time: 15s</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
