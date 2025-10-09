@@ -144,4 +144,4 @@ This project showcases the fusion of **instructional design methodology** with *
 
 ---
 
- *“Play. Learn. Grow.” – Turning math into a magical experience through AI and design.*
+ **“Play. Learn. Grow.” – Turning math into a magical experience through AI and design.**
